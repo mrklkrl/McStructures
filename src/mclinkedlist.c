@@ -38,7 +38,7 @@ int mcSinglyLinkedListInit(McSinglyLinkedList* list)
     return 1;
 }
 
-int mcSinglyLinkedListAppend(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToAdd)
+int mcSinglyLinkedListAppend( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToAdd)
 {
     // our list is in a bad state
     if ((!list->last || !list->first) && (list->size != 0))
@@ -64,14 +64,14 @@ int mcSinglyLinkedListAppend(McSinglyLinkedList* list, McSinglyLinkedListElement
     return 1;
 }
 
-int mcSinglyLinkedListErase(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToerase)
+int mcSinglyLinkedListErase( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToerase)
 {
     if(elementToerase == list->first)
         list->first = elementToerase->next;
 
     else
     {
-        McSinglyLinkedListElement* element = list->find(list, elementToerase->index - 1);
+         McSinglyLinkedListElement* element = list->find(list, elementToerase->index - 1);
         element->next = elementToerase->next;
     }
     
@@ -80,7 +80,7 @@ int mcSinglyLinkedListErase(McSinglyLinkedList* list, McSinglyLinkedListElement*
     return 1;
 }
 
-int mcSinglyLinkedListInsertAfter(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert, McSinglyLinkedListElement* elementToInsertAfter)
+int mcSinglyLinkedListInsertAfter( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToInsert,  McSinglyLinkedListElement* elementToInsertAfter)
 {
     elementToInsert->next = elementToInsertAfter->next;
     elementToInsertAfter->next = elementToInsert;
@@ -93,7 +93,7 @@ int mcSinglyLinkedListInsertAfter(McSinglyLinkedList* list, McSinglyLinkedListEl
     return 1;
 }
 
-int mcSinglyLinkedListInsertBefore(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert, McSinglyLinkedListElement* elementToInsertBefore)
+int mcSinglyLinkedListInsertBefore( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToInsert,  McSinglyLinkedListElement* elementToInsertBefore)
 {
     if (list->first == elementToInsertBefore)
     {
@@ -102,7 +102,7 @@ int mcSinglyLinkedListInsertBefore(McSinglyLinkedList* list, McSinglyLinkedListE
     }
     else
     {
-        McSinglyLinkedListElement* element = list->find(list, elementToInsertBefore->index - 1);
+         McSinglyLinkedListElement* element = list->find(list, elementToInsertBefore->index - 1);
         elementToInsert->next = elementToInsertBefore;
         element->next = elementToInsert;
     }
@@ -113,9 +113,9 @@ int mcSinglyLinkedListInsertBefore(McSinglyLinkedList* list, McSinglyLinkedListE
     return 1;
 }
 
-McSinglyLinkedListElement* mcSinglyLinkedListFind(McSinglyLinkedList* list, int index)
+ McSinglyLinkedListElement* mcSinglyLinkedListFind( McSinglyLinkedList* list, int index)
 {
-    McSinglyLinkedListElement* foundElement = list->first;
+     McSinglyLinkedListElement* foundElement = list->first;
     for(int i = 0; i < list->size; i++)
     {
         if(foundElement->index == index)
@@ -128,12 +128,13 @@ McSinglyLinkedListElement* mcSinglyLinkedListFind(McSinglyLinkedList* list, int 
     return 0;
 }
 
-int reIndex(McSinglyLinkedList* list)
+int reIndex( McSinglyLinkedList* list)
 {
-    McSinglyLinkedListElement* element = list->first;
+     McSinglyLinkedListElement* element = list->first;
     for(int i = 0; i < list->size; i++)
     {
         element->index = i;
         element = element->next;
     }
+    return 1;
 }

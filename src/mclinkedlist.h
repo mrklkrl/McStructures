@@ -38,7 +38,7 @@
 typedef struct McSinglyLinkedListElement 
 {
     void* data;
-    McSinglyLinkedListElement* next;
+    struct McSinglyLinkedListElement* next;
     int index;
 } McSinglyLinkedListElement;
 
@@ -54,13 +54,13 @@ typedef struct McSinglyLinkedListElement
 typedef struct McSinglyLinkedList
 {
     int size;
-    McSinglyLinkedListElement* first;
-    McSinglyLinkedListElement* last;
-    int (*append) (McSinglyLinkedList* list, McSinglyLinkedListElement* elementToAdd);
-    int (*erase) (McSinglyLinkedList* list, McSinglyLinkedListElement* elementToerase);
-    int (*insertAfter) (McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert,McSinglyLinkedListElement* elementToInsertAfter);
-    int (*insertBefore) (McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert,McSinglyLinkedListElement* elementToInsertBefore);
-    McSinglyLinkedListElement* (*find) (McSinglyLinkedList* list,int index);
+    struct McSinglyLinkedListElement* first;
+    struct McSinglyLinkedListElement* last;
+    int (*append) (struct McSinglyLinkedList* list, struct McSinglyLinkedListElement* elementToAdd);
+    int (*erase) (struct McSinglyLinkedList* list, struct McSinglyLinkedListElement* elementToerase);
+    int (*insertAfter) (struct McSinglyLinkedList* list, struct McSinglyLinkedListElement* elementToInsert, struct McSinglyLinkedListElement* elementToInsertAfter);
+    int (*insertBefore) (struct McSinglyLinkedList* list, struct McSinglyLinkedListElement* elementToInsert, struct McSinglyLinkedListElement* elementToInsertBefore);
+     McSinglyLinkedListElement* (*find) (struct McSinglyLinkedList* list,int index);
 } McSinglyLinkedList;
 
 /**
@@ -69,7 +69,7 @@ typedef struct McSinglyLinkedList
  * @param list the mcSinglyLinkedList to initialize
  * @return int 1 for success, 0 for failure
  */
-int mcSinglyLinkedListInit(McSinglyLinkedList* list);
+int mcSinglyLinkedListInit( McSinglyLinkedList* list);
 
 /**
  * @brief Append a mcSinglyLinkedListElement to the end of a mcSinglyLinkedList
@@ -78,7 +78,7 @@ int mcSinglyLinkedListInit(McSinglyLinkedList* list);
  * @param elementToAdd
  * @return int 1 for success, 0 for failure
  */
-int mcSinglyLinkedListAppend(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToAdd);
+int mcSinglyLinkedListAppend( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToAdd);
 
 /**
  * @brief erase an element from a mcSinglyLinkedList
@@ -87,7 +87,7 @@ int mcSinglyLinkedListAppend(McSinglyLinkedList* list, McSinglyLinkedListElement
  * @param elementToerase
  * @return int 1 for success, 0 for failure
  */
-int mcSinglyLinkedListErase(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToErase);
+int mcSinglyLinkedListErase( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToErase);
 
 /**
  * @brief insert mcSinglyLinkedListElement in the list after a 
@@ -98,7 +98,7 @@ int mcSinglyLinkedListErase(McSinglyLinkedList* list, McSinglyLinkedListElement*
  * @param elementToInsertAfter the element that's already in the list
  * @return int 1 for success, 0 for failure
  */
-int mcSinglyLinkedListInsertAfter(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert,McSinglyLinkedListElement* elementToInsertAfter);
+int mcSinglyLinkedListInsertAfter( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToInsert, McSinglyLinkedListElement* elementToInsertAfter);
 
 /**
  * @brief insert mcSinglyLinkedListElement in the list before a 
@@ -109,21 +109,21 @@ int mcSinglyLinkedListInsertAfter(McSinglyLinkedList* list, McSinglyLinkedListEl
  * @param elementToInsertAfter the element that's already in the list
  * @return int 1 for success, 0 for failure
  */
-int mcSinglyLinkedListInsertBefore(McSinglyLinkedList* list, McSinglyLinkedListElement* elementToInsert,McSinglyLinkedListElement* elementToInsertBefore);
+int mcSinglyLinkedListInsertBefore( McSinglyLinkedList* list,  McSinglyLinkedListElement* elementToInsert, McSinglyLinkedListElement* elementToInsertBefore);
 
 /**
  * @brief find a McSinglyLinkedListElement by its index
  * 
  * @param list the list to do the operation on
  * @param index 
- * @return McSinglyLinkedListElement* 
+ * @return  McSinglyLinkedListElement* 
  */
-McSinglyLinkedListElement* mcSinglyLinkedListFind(McSinglyLinkedList* list, int index);
+ McSinglyLinkedListElement* mcSinglyLinkedListFind( McSinglyLinkedList* list, int index);
 
 /**
  * @brief make sure the indeces of a linkedlist are in order
  * 
  */
-int reIndex(McSinglyLinkedList* list);
+int reIndex( McSinglyLinkedList* list);
 
 #endif // MCLINKEDLIST_H
