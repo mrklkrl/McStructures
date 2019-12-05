@@ -1,0 +1,207 @@
+\hypertarget{mcdoublylinkedlist_8h}{}\doxysection{src/mcdoublylinkedlist.h File Reference}
+\label{mcdoublylinkedlist_8h}\index{src/mcdoublylinkedlist.h@{src/mcdoublylinkedlist.h}}
+
+
+File containing declarations for doubly linked list data structures.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} -\/ a Doubly Linked List. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} \mbox{\hyperlink{mcdoublylinkedlist_8h_acf17a8954de4f1dd8a259bc492810da0}{Mc\+Doubly\+Linked\+List\+Element}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} \mbox{\hyperlink{mcdoublylinkedlist_8h_ab89eb84eef37a7348f656df91a9a1281}{Mc\+Doubly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} -\/ a Doubly Linked List. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_a3d4eb700592b0787ea472f6917251087}{mc\+Doubly\+Linked\+List\+Init}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em initializes a mc\+Doubly\+Linked\+List, specifying member functions and initializing data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_aa6c1d398fad8b756610c4db0752b264b}{mc\+Doubly\+Linked\+List\+Append}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Append a mc\+Doubly\+Linked\+List\+Element to the end of a mc\+Doubly\+Linked\+List. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_a257f433a4c069a9495d72775db8190a8}{mc\+Doubly\+Linked\+List\+Erase}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Erase)
+\begin{DoxyCompactList}\small\item\em erase an element from a mc\+Doubly\+Linked\+List \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_a43d63db45c23892a8b8985c3bbaecdfe}{mc\+Doubly\+Linked\+List\+Insert\+After}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+After)
+\begin{DoxyCompactList}\small\item\em insert mc\+Doubly\+Linked\+List\+Element in the list after a given mc\+Doubly\+Linked\+List\+Element thats already in the list \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_a87e5c95c4c8ce2a00da3db01ebbab0a7}{mc\+Doubly\+Linked\+List\+Insert\+Before}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+Before)
+\begin{DoxyCompactList}\small\item\em insert mc\+Doubly\+Linked\+List\+Element in the list before a given mc\+Doubly\+Linked\+List\+Element thats already in the list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$ \mbox{\hyperlink{mcdoublylinkedlist_8h_a76307f9426fd9c59d79e7576402f843c}{mc\+Doubly\+Linked\+List\+Find}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, int index)
+\begin{DoxyCompactList}\small\item\em find a \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} by its index \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcdoublylinkedlist_8h_afbf65a5dfd383be1819cca8f1c883270}{re\+Index\+Mc\+Doubly}} (\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em make sure the indeces of a linkedlist are in order \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing declarations for doubly linked list data structures. 
+
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1 Dec 2018 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_ab89eb84eef37a7348f656df91a9a1281}\label{mcdoublylinkedlist_8h_ab89eb84eef37a7348f656df91a9a1281}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!McDoublyLinkedList@{McDoublyLinkedList}}
+\index{McDoublyLinkedList@{McDoublyLinkedList}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{McDoublyLinkedList}{McDoublyLinkedList}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}  \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}}
+
+
+
+\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} -\/ a Doubly Linked List. 
+
+This type of list can be traversed in either forward or reverse direction Elements can be appended, erased, inserted, or found. Must be initialized with \mbox{\hyperlink{mcdoublylinkedlist_8h_a3d4eb700592b0787ea472f6917251087}{mc\+Doubly\+Linked\+List\+Init()}}; \mbox{\Hypertarget{mcdoublylinkedlist_8h_acf17a8954de4f1dd8a259bc492810da0}\label{mcdoublylinkedlist_8h_acf17a8954de4f1dd8a259bc492810da0}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!McDoublyLinkedListElement@{McDoublyLinkedListElement}}
+\index{McDoublyLinkedListElement@{McDoublyLinkedListElement}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{McDoublyLinkedListElement}{McDoublyLinkedListElement}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}}  \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}}}
+
+
+
+\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}}. 
+
+This type of element stores a pointer to the previous and next element in the list. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_aa6c1d398fad8b756610c4db0752b264b}\label{mcdoublylinkedlist_8h_aa6c1d398fad8b756610c4db0752b264b}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListAppend@{mcDoublyLinkedListAppend}}
+\index{mcDoublyLinkedListAppend@{mcDoublyLinkedListAppend}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListAppend()}{mcDoublyLinkedListAppend()}}
+{\footnotesize\ttfamily int mc\+Doubly\+Linked\+List\+Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Add }\end{DoxyParamCaption})}
+
+
+
+Append a mc\+Doubly\+Linked\+List\+Element to the end of a mc\+Doubly\+Linked\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Add} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_a257f433a4c069a9495d72775db8190a8}\label{mcdoublylinkedlist_8h_a257f433a4c069a9495d72775db8190a8}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListErase@{mcDoublyLinkedListErase}}
+\index{mcDoublyLinkedListErase@{mcDoublyLinkedListErase}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListErase()}{mcDoublyLinkedListErase()}}
+{\footnotesize\ttfamily int mc\+Doubly\+Linked\+List\+Erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Erase }\end{DoxyParamCaption})}
+
+
+
+erase an element from a mc\+Doubly\+Linked\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+Toerase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_a76307f9426fd9c59d79e7576402f843c}\label{mcdoublylinkedlist_8h_a76307f9426fd9c59d79e7576402f843c}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListFind@{mcDoublyLinkedListFind}}
+\index{mcDoublyLinkedListFind@{mcDoublyLinkedListFind}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListFind()}{mcDoublyLinkedListFind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}}$\ast$ mc\+Doubly\+Linked\+List\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+find a \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} by its index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mc\+Doubly\+Linked\+List\+Element$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_a3d4eb700592b0787ea472f6917251087}\label{mcdoublylinkedlist_8h_a3d4eb700592b0787ea472f6917251087}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListInit@{mcDoublyLinkedListInit}}
+\index{mcDoublyLinkedListInit@{mcDoublyLinkedListInit}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListInit()}{mcDoublyLinkedListInit()}}
+{\footnotesize\ttfamily int mc\+Doubly\+Linked\+List\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+initializes a mc\+Doubly\+Linked\+List, specifying member functions and initializing data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the mc\+Doubly\+Linked\+List to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_a43d63db45c23892a8b8985c3bbaecdfe}\label{mcdoublylinkedlist_8h_a43d63db45c23892a8b8985c3bbaecdfe}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListInsertAfter@{mcDoublyLinkedListInsertAfter}}
+\index{mcDoublyLinkedListInsertAfter@{mcDoublyLinkedListInsertAfter}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListInsertAfter()}{mcDoublyLinkedListInsertAfter()}}
+{\footnotesize\ttfamily int mc\+Doubly\+Linked\+List\+Insert\+After (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert\+After }\end{DoxyParamCaption})}
+
+
+
+insert mc\+Doubly\+Linked\+List\+Element in the list after a given mc\+Doubly\+Linked\+List\+Element thats already in the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Insert} & the element we want to insert into the list \\
+\hline
+{\em element\+To\+Insert\+After} & the element that\textquotesingle{}s already in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_a87e5c95c4c8ce2a00da3db01ebbab0a7}\label{mcdoublylinkedlist_8h_a87e5c95c4c8ce2a00da3db01ebbab0a7}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!mcDoublyLinkedListInsertBefore@{mcDoublyLinkedListInsertBefore}}
+\index{mcDoublyLinkedListInsertBefore@{mcDoublyLinkedListInsertBefore}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcDoublyLinkedListInsertBefore()}{mcDoublyLinkedListInsertBefore()}}
+{\footnotesize\ttfamily int mc\+Doubly\+Linked\+List\+Insert\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert,  }\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert\+Before }\end{DoxyParamCaption})}
+
+
+
+insert mc\+Doubly\+Linked\+List\+Element in the list before a given mc\+Doubly\+Linked\+List\+Element thats already in the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Insert} & the element we want to insert into the list \\
+\hline
+{\em element\+To\+Insert\+After} & the element that\textquotesingle{}s already in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcdoublylinkedlist_8h_afbf65a5dfd383be1819cca8f1c883270}\label{mcdoublylinkedlist_8h_afbf65a5dfd383be1819cca8f1c883270}} 
+\index{mcdoublylinkedlist.h@{mcdoublylinkedlist.h}!reIndexMcDoubly@{reIndexMcDoubly}}
+\index{reIndexMcDoubly@{reIndexMcDoubly}!mcdoublylinkedlist.h@{mcdoublylinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{reIndexMcDoubly()}{reIndexMcDoubly()}}
+{\footnotesize\ttfamily int re\+Index\+Mc\+Doubly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+make sure the indeces of a linkedlist are in order 
+

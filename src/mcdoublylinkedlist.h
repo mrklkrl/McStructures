@@ -16,10 +16,10 @@
  */
 
 /**
- * @file mclinkedlist.h
+ * @file mcdoublylinkedlist.h
  * @author Mike Cole
  * @date 1 Dec 2018
- * @brief File containing declarations for  singly linked list data structures
+ * @brief File containing declarations for doubly linked list data structures
  */
 
 #ifndef MCDOUBLYLINKEDLIST_H
@@ -127,4 +127,4 @@ int mcDoublyLinkedListInsertBefore( McDoublyLinkedList* list,  McDoublyLinkedLis
  */
 int reIndexMcDoubly( McDoublyLinkedList* list);
 
-#endif // MCLINKEDLIST_H
+#endif // MCDOUBLYLINKEDLIST_H
