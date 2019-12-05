@@ -19,7 +19,7 @@
  * @file mclinkedlist.h
  * @author Mike Cole
  * @date 1 Dec 2018
- * @brief File containing declarations for linked list data structures
+ * @brief File containing declarations for  singly linked list data structures
  */
 
 #ifndef MCLINKEDLIST_H
