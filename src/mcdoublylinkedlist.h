@@ -125,6 +125,6 @@ int mcDoublyLinkedListInsertBefore( McDoublyLinkedList* list,  McDoublyLinkedLis
  * @brief make sure the indeces of a linkedlist are in order
  * 
  */
-int reIndexMcDoubly( McDoublyLinkedList* list);
+int reIndexMcDoubly( McDoublyLinkedList* list); //TODO only reindex the items that need reindexing instead of entire list
 
 #endif // MCDOUBLYLINKEDLIST_H

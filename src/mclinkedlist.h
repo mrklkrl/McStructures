@@ -124,6 +124,6 @@ int mcSinglyLinkedListInsertBefore( McSinglyLinkedList* list,  McSinglyLinkedLis
  * @brief make sure the indeces of a linkedlist are in order
  * 
  */
-int reIndex( McSinglyLinkedList* list);
+int reIndex( McSinglyLinkedList* list); //TODO only reindex the items that need reindexing instead of entire list
 
 #endif // MCLINKEDLIST_H

@@ -71,7 +71,7 @@ int mcSinglyLinkedListErase( McSinglyLinkedList* list,  McSinglyLinkedListElemen
 
     else
     {
-         McSinglyLinkedListElement* element = list->find(list, elementToerase->index - 1);
+        McSinglyLinkedListElement* element = list->find(list, elementToerase->index - 1);
         element->next = elementToerase->next;
     }
     

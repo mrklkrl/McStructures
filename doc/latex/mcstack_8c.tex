@@ -1,0 +1,107 @@
+\hypertarget{mcstack_8c}{}\doxysection{src/mcstack.c File Reference}
+\label{mcstack_8c}\index{src/mcstack.c@{src/mcstack.c}}
+
+
+File containing definitions for stack data structure.  
+
+
+{\ttfamily \#include \char`\"{}mcstack.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mcstack_8c_a9659eb4ff2c9bde8f6115a1ba8a6f0a9}{mc\+Stack\+Init}} (\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em initializes a \mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{mcstack_8c_a642bf112e3964bf4e317d02fcd7766ae}{mc\+Stack\+Pop}} (\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em remove the last element that was added to the stack \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{mcstack_8c_a50bb6525fb709c3d7d33de5b5fd2f23c}{mc\+Stack\+Top}} (\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$stack)
+\begin{DoxyCompactList}\small\item\em examine the last element added to the stack \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcstack_8c_a36b3d2e835df71c76a44fbdb721b0b9a}{mc\+Stack\+Push}} (\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$stack, void $\ast$element\+To\+Push)
+\begin{DoxyCompactList}\small\item\em place an element onto the top of the stack \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing definitions for stack data structure. 
+
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+5 Dec 2018 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mcstack_8c_a9659eb4ff2c9bde8f6115a1ba8a6f0a9}\label{mcstack_8c_a9659eb4ff2c9bde8f6115a1ba8a6f0a9}} 
+\index{mcstack.c@{mcstack.c}!mcStackInit@{mcStackInit}}
+\index{mcStackInit@{mcStackInit}!mcstack.c@{mcstack.c}}
+\doxysubsubsection{\texorpdfstring{mcStackInit()}{mcStackInit()}}
+{\footnotesize\ttfamily int mc\+Stack\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+initializes a \mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & -\/ the \mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 for failure 1 for success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcstack_8c_a642bf112e3964bf4e317d02fcd7766ae}\label{mcstack_8c_a642bf112e3964bf4e317d02fcd7766ae}} 
+\index{mcstack.c@{mcstack.c}!mcStackPop@{mcStackPop}}
+\index{mcStackPop@{mcStackPop}!mcstack.c@{mcstack.c}}
+\doxysubsubsection{\texorpdfstring{mcStackPop()}{mcStackPop()}}
+{\footnotesize\ttfamily void$\ast$ mc\+Stack\+Pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+remove the last element that was added to the stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & -\/ the stack to pop from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ which was last added to the stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcstack_8c_a36b3d2e835df71c76a44fbdb721b0b9a}\label{mcstack_8c_a36b3d2e835df71c76a44fbdb721b0b9a}} 
+\index{mcstack.c@{mcstack.c}!mcStackPush@{mcStackPush}}
+\index{mcStackPush@{mcStackPush}!mcstack.c@{mcstack.c}}
+\doxysubsubsection{\texorpdfstring{mcStackPush()}{mcStackPush()}}
+{\footnotesize\ttfamily int mc\+Stack\+Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$}]{stack,  }\item[{void $\ast$}]{element\+To\+Push }\end{DoxyParamCaption})}
+
+
+
+place an element onto the top of the stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & -\/ the stack to push to \\
+\hline
+{\em element\+To\+Push} & -\/ the element to push onto the stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 for failure, 1 for success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcstack_8c_a50bb6525fb709c3d7d33de5b5fd2f23c}\label{mcstack_8c_a50bb6525fb709c3d7d33de5b5fd2f23c}} 
+\index{mcstack.c@{mcstack.c}!mcStackTop@{mcStackTop}}
+\index{mcStackTop@{mcStackTop}!mcstack.c@{mcstack.c}}
+\doxysubsubsection{\texorpdfstring{mcStackTop()}{mcStackTop()}}
+{\footnotesize\ttfamily void$\ast$ mc\+Stack\+Top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_stack}{Mc\+Stack}} $\ast$}]{stack }\end{DoxyParamCaption})}
+
+
+
+examine the last element added to the stack 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & -\/ the stack to examine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ which was last added to the stack 
+\end{DoxyReturn}

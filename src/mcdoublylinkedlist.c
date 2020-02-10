@@ -16,7 +16,7 @@
  */
 
 /**
- * @file mclinkedlist.c
+ * @file mcdoublylinkedlist.c
  * @author Mike Cole
  * @date 1 Dec 2018
  * @brief File containing definitions for linked list data structures
