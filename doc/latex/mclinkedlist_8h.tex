@@ -1,0 +1,215 @@
+\hypertarget{mclinkedlist_8h}{}\doxysection{src/mclinkedlist.h File Reference}
+\label{mclinkedlist_8h}\index{src/mclinkedlist.h@{src/mclinkedlist.h}}
+
+
+File containing declarations for singly linked list data structures.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} -\/ a Singly Linked List. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} \mbox{\hyperlink{mclinkedlist_8h_aecdde217cb79250b61ec5aa394b7cbf2}{Mc\+Singly\+Linked\+List\+Element}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} \mbox{\hyperlink{mclinkedlist_8h_aa99c5a71ca0005a1ffb2b149c4c05888}{Mc\+Singly\+Linked\+List}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} -\/ a Singly Linked List. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mclinkedlist_8h_a14f73255f8caf5e64cef8455755f9be5}{mc\+Singly\+Linked\+List\+Init}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em initializes a mc\+Singly\+Linked\+List, specifying member functions and initializing data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mclinkedlist_8h_a7abffb4590bbc486155735c5111b8f7a}{mc\+Singly\+Linked\+List\+Append}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Append a mc\+Singly\+Linked\+List\+Element to the end of a mc\+Singly\+Linked\+List. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mclinkedlist_8h_affdcc4364c76c47725c85b8e07f0eb82}{mc\+Singly\+Linked\+List\+Erase}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Erase)
+\begin{DoxyCompactList}\small\item\em erase an element from a mc\+Singly\+Linked\+List \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mclinkedlist_8h_a93f69e53dd1aad02f410115737d7891e}{mc\+Singly\+Linked\+List\+Insert\+After}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+After)
+\begin{DoxyCompactList}\small\item\em insert mc\+Singly\+Linked\+List\+Element in the list after a given mc\+Singly\+Linked\+List\+Element thats already in the list \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mclinkedlist_8h_a49e23bcf34e097b7b3435823e1cad31d}{mc\+Singly\+Linked\+List\+Insert\+Before}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+Before)
+\begin{DoxyCompactList}\small\item\em insert mc\+Singly\+Linked\+List\+Element in the list before a given mc\+Singly\+Linked\+List\+Element thats already in the list \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$ \mbox{\hyperlink{mclinkedlist_8h_ad163fa36e813f9e045e983c63ab38495}{mc\+Singly\+Linked\+List\+Find}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list, int index)
+\begin{DoxyCompactList}\small\item\em find a \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} by its index \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mclinkedlist_8h_af6b157815f67b2e6522cf1ac658a5f6c}{re\+Index}} (\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em make sure the indeces of a linkedlist are in order \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing declarations for singly linked list data structures. 
+
+File containing declarations for stack data structure.
+
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+1 Dec 2018
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+5 Dec 2018 
+\end{DoxyDate}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mclinkedlist_8h_aa99c5a71ca0005a1ffb2b149c4c05888}\label{mclinkedlist_8h_aa99c5a71ca0005a1ffb2b149c4c05888}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!McSinglyLinkedList@{McSinglyLinkedList}}
+\index{McSinglyLinkedList@{McSinglyLinkedList}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{McSinglyLinkedList}{McSinglyLinkedList}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}  \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}}
+
+
+
+\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} -\/ a Singly Linked List. 
+
+This type of list can be traversed in a single direction only using an iterate function Elements can be appended, erased, inserted, or found. Must be initialized with \mbox{\hyperlink{mclinkedlist_8c_a14f73255f8caf5e64cef8455755f9be5}{mc\+Singly\+Linked\+List\+Init()}}; \mbox{\Hypertarget{mclinkedlist_8h_aecdde217cb79250b61ec5aa394b7cbf2}\label{mclinkedlist_8h_aecdde217cb79250b61ec5aa394b7cbf2}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!McSinglyLinkedListElement@{McSinglyLinkedListElement}}
+\index{McSinglyLinkedListElement@{McSinglyLinkedListElement}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{McSinglyLinkedListElement}{McSinglyLinkedListElement}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}}  \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}}}
+
+
+
+\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} -\/ an element belonging to a \mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}}. 
+
+This type of element stores a pointer to the next element in the list. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mclinkedlist_8h_a7abffb4590bbc486155735c5111b8f7a}\label{mclinkedlist_8h_a7abffb4590bbc486155735c5111b8f7a}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListAppend@{mcSinglyLinkedListAppend}}
+\index{mcSinglyLinkedListAppend@{mcSinglyLinkedListAppend}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListAppend()}{mcSinglyLinkedListAppend()}}
+{\footnotesize\ttfamily int mc\+Singly\+Linked\+List\+Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Add }\end{DoxyParamCaption})}
+
+
+
+Append a mc\+Singly\+Linked\+List\+Element to the end of a mc\+Singly\+Linked\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Add} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_affdcc4364c76c47725c85b8e07f0eb82}\label{mclinkedlist_8h_affdcc4364c76c47725c85b8e07f0eb82}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListErase@{mcSinglyLinkedListErase}}
+\index{mcSinglyLinkedListErase@{mcSinglyLinkedListErase}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListErase()}{mcSinglyLinkedListErase()}}
+{\footnotesize\ttfamily int mc\+Singly\+Linked\+List\+Erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Erase }\end{DoxyParamCaption})}
+
+
+
+erase an element from a mc\+Singly\+Linked\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+Toerase} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_ad163fa36e813f9e045e983c63ab38495}\label{mclinkedlist_8h_ad163fa36e813f9e045e983c63ab38495}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListFind@{mcSinglyLinkedListFind}}
+\index{mcSinglyLinkedListFind@{mcSinglyLinkedListFind}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListFind()}{mcSinglyLinkedListFind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}}$\ast$ mc\+Singly\+Linked\+List\+Find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+find a \mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} by its index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mc\+Singly\+Linked\+List\+Element$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_a14f73255f8caf5e64cef8455755f9be5}\label{mclinkedlist_8h_a14f73255f8caf5e64cef8455755f9be5}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListInit@{mcSinglyLinkedListInit}}
+\index{mcSinglyLinkedListInit@{mcSinglyLinkedListInit}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListInit()}{mcSinglyLinkedListInit()}}
+{\footnotesize\ttfamily int mc\+Singly\+Linked\+List\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+initializes a mc\+Singly\+Linked\+List, specifying member functions and initializing data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the mc\+Singly\+Linked\+List to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_a93f69e53dd1aad02f410115737d7891e}\label{mclinkedlist_8h_a93f69e53dd1aad02f410115737d7891e}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListInsertAfter@{mcSinglyLinkedListInsertAfter}}
+\index{mcSinglyLinkedListInsertAfter@{mcSinglyLinkedListInsertAfter}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListInsertAfter()}{mcSinglyLinkedListInsertAfter()}}
+{\footnotesize\ttfamily int mc\+Singly\+Linked\+List\+Insert\+After (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert\+After }\end{DoxyParamCaption})}
+
+
+
+insert mc\+Singly\+Linked\+List\+Element in the list after a given mc\+Singly\+Linked\+List\+Element thats already in the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Insert} & the element we want to insert into the list \\
+\hline
+{\em element\+To\+Insert\+After} & the element that\textquotesingle{}s already in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_a49e23bcf34e097b7b3435823e1cad31d}\label{mclinkedlist_8h_a49e23bcf34e097b7b3435823e1cad31d}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!mcSinglyLinkedListInsertBefore@{mcSinglyLinkedListInsertBefore}}
+\index{mcSinglyLinkedListInsertBefore@{mcSinglyLinkedListInsertBefore}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{mcSinglyLinkedListInsertBefore()}{mcSinglyLinkedListInsertBefore()}}
+{\footnotesize\ttfamily int mc\+Singly\+Linked\+List\+Insert\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert,  }\item[{\mbox{\hyperlink{struct_mc_singly_linked_list_element}{Mc\+Singly\+Linked\+List\+Element}} $\ast$}]{element\+To\+Insert\+Before }\end{DoxyParamCaption})}
+
+
+
+insert mc\+Singly\+Linked\+List\+Element in the list before a given mc\+Singly\+Linked\+List\+Element thats already in the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & the list to do the operation on \\
+\hline
+{\em element\+To\+Insert} & the element we want to insert into the list \\
+\hline
+{\em element\+To\+Insert\+After} & the element that\textquotesingle{}s already in the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 for success, 0 for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mclinkedlist_8h_af6b157815f67b2e6522cf1ac658a5f6c}\label{mclinkedlist_8h_af6b157815f67b2e6522cf1ac658a5f6c}} 
+\index{mclinkedlist.h@{mclinkedlist.h}!reIndex@{reIndex}}
+\index{reIndex@{reIndex}!mclinkedlist.h@{mclinkedlist.h}}
+\doxysubsubsection{\texorpdfstring{reIndex()}{reIndex()}}
+{\footnotesize\ttfamily int re\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_singly_linked_list}{Mc\+Singly\+Linked\+List}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+make sure the indeces of a linkedlist are in order 
+

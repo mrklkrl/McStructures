@@ -1,0 +1,48 @@
+\hypertarget{struct_mc_doubly_linked_list}{}\doxysection{Mc\+Doubly\+Linked\+List Struct Reference}
+\label{struct_mc_doubly_linked_list}\index{McDoublyLinkedList@{McDoublyLinkedList}}
+
+
+\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} -\/ a Doubly Linked List.  
+
+
+
+
+{\ttfamily \#include $<$mcdoublylinkedlist.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_aa08ba9515fe4875004a7400b6323fe64}\label{struct_mc_doubly_linked_list_aa08ba9515fe4875004a7400b6323fe64}} 
+int {\bfseries size}
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_a9ab690ee7a4e0271526cb1e1785e9db2}\label{struct_mc_doubly_linked_list_a9ab690ee7a4e0271526cb1e1785e9db2}} 
+struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$ {\bfseries first}
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_a46ef012ff7e26dac6554bce799a1987a}\label{struct_mc_doubly_linked_list_a46ef012ff7e26dac6554bce799a1987a}} 
+struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$ {\bfseries last}
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_aac717f52a641be9d68ff011ed331dbd0}\label{struct_mc_doubly_linked_list_aac717f52a641be9d68ff011ed331dbd0}} 
+int($\ast$ {\bfseries append} )(struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Add)
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_a5670d7ea94691051af23682e4248ceb6}\label{struct_mc_doubly_linked_list_a5670d7ea94691051af23682e4248ceb6}} 
+int($\ast$ {\bfseries erase} )(struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+Toerase)
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_a74d6c111f42cb1187c4d9efe60138921}\label{struct_mc_doubly_linked_list_a74d6c111f42cb1187c4d9efe60138921}} 
+int($\ast$ {\bfseries insert\+After} )(struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+After)
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_ad17d4ef643073ffd2383d44049933197}\label{struct_mc_doubly_linked_list_ad17d4ef643073ffd2383d44049933197}} 
+int($\ast$ {\bfseries insert\+Before} )(struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert, struct \mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$element\+To\+Insert\+Before)
+\item 
+\mbox{\Hypertarget{struct_mc_doubly_linked_list_a180cbcf43dadf97d36768c5cde8f6627}\label{struct_mc_doubly_linked_list_a180cbcf43dadf97d36768c5cde8f6627}} 
+\mbox{\hyperlink{struct_mc_doubly_linked_list_element}{Mc\+Doubly\+Linked\+List\+Element}} $\ast$($\ast$ {\bfseries find} )(struct \mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} $\ast$list, int index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_mc_doubly_linked_list}{Mc\+Doubly\+Linked\+List}} -\/ a Doubly Linked List. 
+
+This type of list can be traversed in either forward or reverse direction Elements can be appended, erased, inserted, or found. Must be initialized with \mbox{\hyperlink{mcdoublylinkedlist_8c_a3d4eb700592b0787ea472f6917251087}{mc\+Doubly\+Linked\+List\+Init()}}; 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{mcdoublylinkedlist_8h}{mcdoublylinkedlist.\+h}}\end{DoxyCompactItemize}
