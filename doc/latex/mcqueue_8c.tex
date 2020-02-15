@@ -1,0 +1,107 @@
+\hypertarget{mcqueue_8c}{}\doxysection{src/mcqueue.c File Reference}
+\label{mcqueue_8c}\index{src/mcqueue.c@{src/mcqueue.c}}
+
+
+File containing definitions for queue data structure.  
+
+
+{\ttfamily \#include \char`\"{}mcqueue.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mcqueue_8c_a553c6ce585b3801a7978c65a343878ae}{mc\+Queue\+Init}} (\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em initializes a \mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{mcqueue_8c_a50937a05882589966245298eb6a76b45}{mc\+Queue\+Deque}} (\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em remove the oldes element that was added to the queue \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{mcqueue_8c_afc920be4e695a95e0544770e3f035668}{mc\+Queue\+Front}} (\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em examine the oldest element added to the queue \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcqueue_8c_ae9615907a7924ee207bb85ecfce2ef50}{mc\+Queue\+Enqueue}} (\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$queue, void $\ast$element\+To\+Enqueue)
+\begin{DoxyCompactList}\small\item\em place an element onto the back of the queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing definitions for queue data structure. 
+
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14 Feb 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mcqueue_8c_a50937a05882589966245298eb6a76b45}\label{mcqueue_8c_a50937a05882589966245298eb6a76b45}} 
+\index{mcqueue.c@{mcqueue.c}!mcQueueDeque@{mcQueueDeque}}
+\index{mcQueueDeque@{mcQueueDeque}!mcqueue.c@{mcqueue.c}}
+\doxysubsubsection{\texorpdfstring{mcQueueDeque()}{mcQueueDeque()}}
+{\footnotesize\ttfamily void$\ast$ mc\+Queue\+Deque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$}]{queue }\end{DoxyParamCaption})}
+
+
+
+remove the oldes element that was added to the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & -\/ the queue to pop from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ which was last added to the queue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcqueue_8c_ae9615907a7924ee207bb85ecfce2ef50}\label{mcqueue_8c_ae9615907a7924ee207bb85ecfce2ef50}} 
+\index{mcqueue.c@{mcqueue.c}!mcQueueEnqueue@{mcQueueEnqueue}}
+\index{mcQueueEnqueue@{mcQueueEnqueue}!mcqueue.c@{mcqueue.c}}
+\doxysubsubsection{\texorpdfstring{mcQueueEnqueue()}{mcQueueEnqueue()}}
+{\footnotesize\ttfamily int mc\+Queue\+Enqueue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$}]{queue,  }\item[{void $\ast$}]{element\+To\+Enqueue }\end{DoxyParamCaption})}
+
+
+
+place an element onto the back of the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & -\/ the queue to enqueue to \\
+\hline
+{\em element\+To\+Push} & -\/ the element to enqueue onto the queue \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 for failure, 1 for success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcqueue_8c_afc920be4e695a95e0544770e3f035668}\label{mcqueue_8c_afc920be4e695a95e0544770e3f035668}} 
+\index{mcqueue.c@{mcqueue.c}!mcQueueFront@{mcQueueFront}}
+\index{mcQueueFront@{mcQueueFront}!mcqueue.c@{mcqueue.c}}
+\doxysubsubsection{\texorpdfstring{mcQueueFront()}{mcQueueFront()}}
+{\footnotesize\ttfamily void$\ast$ mc\+Queue\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$}]{queue }\end{DoxyParamCaption})}
+
+
+
+examine the oldest element added to the queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & -\/ the queue to examine \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\ast$ which was last added to the stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{mcqueue_8c_a553c6ce585b3801a7978c65a343878ae}\label{mcqueue_8c_a553c6ce585b3801a7978c65a343878ae}} 
+\index{mcqueue.c@{mcqueue.c}!mcQueueInit@{mcQueueInit}}
+\index{mcQueueInit@{mcQueueInit}!mcqueue.c@{mcqueue.c}}
+\doxysubsubsection{\texorpdfstring{mcQueueInit()}{mcQueueInit()}}
+{\footnotesize\ttfamily int mc\+Queue\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} $\ast$}]{queue }\end{DoxyParamCaption})}
+
+
+
+initializes a \mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & -\/ the \mbox{\hyperlink{struct_mc_queue}{Mc\+Queue}} to initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 for failure 1 for success 
+\end{DoxyReturn}
