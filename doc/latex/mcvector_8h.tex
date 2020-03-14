@@ -1,0 +1,194 @@
+\hypertarget{mcvector_8h}{}\doxysection{src/mcvector.h File Reference}
+\label{mcvector_8h}\index{src/mcvector.h@{src/mcvector.h}}
+
+
+File containing declarations for vector structure.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmc_vector}{mc\+Vector}}
+\begin{DoxyCompactList}\small\item\em Mc\+Vector -\/ a dynamically resizeable container for pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mcvector_8h_a41acb7b432915b41b6285d1be2802622}\label{mcvector_8h_a41acb7b432915b41b6285d1be2802622}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+I\+T\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+B\+Y\+T\+ES}~4
+\item 
+\mbox{\Hypertarget{mcvector_8h_a287106489cc7bd33c1125be71aa6ba84}\label{mcvector_8h_a287106489cc7bd33c1125be71aa6ba84}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+I\+N\+IT}(vec)~\mbox{\hyperlink{structmc_vector}{mc\+Vector}} vec; \mbox{\hyperlink{mcvector_8h_a41f21baa55f13a76e873685076aad334}{mc\+Vector\+Init}}(\&vec)
+\item 
+\mbox{\Hypertarget{mcvector_8h_ad9ff60d62a2b929fbba5ae316e7db307}\label{mcvector_8h_ad9ff60d62a2b929fbba5ae316e7db307}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+A\+DD}(vec,  item)~\mbox{\hyperlink{mcvector_8h_acb623fd69f854cbdb2d3694627ac75c9}{mc\+Vector\+Add}}(\&vec, (void$\ast$) item)
+\item 
+\mbox{\Hypertarget{mcvector_8h_ac17adb5f1eefa2f11d7f799db97c3e89}\label{mcvector_8h_ac17adb5f1eefa2f11d7f799db97c3e89}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+S\+ET}(vec,  index,  item)~\mbox{\hyperlink{mcvector_8h_a3e6ba7c0053fd6010beadcc9230d1dd8}{mc\+Vector\+Set}}(\&vec, index, (void$\ast$) item)
+\item 
+\mbox{\Hypertarget{mcvector_8h_a6261b5720eef1b0af5f4b698d5ee6e7c}\label{mcvector_8h_a6261b5720eef1b0af5f4b698d5ee6e7c}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+G\+ET}(vec,  type,  index)~(type) \mbox{\hyperlink{mcvector_8h_a3f63690319fc717942acdd67601ba543}{mc\+Vector\+Get}}(\&vec, index)
+\item 
+\mbox{\Hypertarget{mcvector_8h_a79e9c0251413fdf18f2948fbe934f505}\label{mcvector_8h_a79e9c0251413fdf18f2948fbe934f505}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+D\+E\+L\+E\+TE}(vec,  index)~\mbox{\hyperlink{mcvector_8h_abfcc65262163628bb84a05ff8a6105c5}{mc\+Vector\+Delete}}(\&vec, index)
+\item 
+\mbox{\Hypertarget{mcvector_8h_a58b929265fc04749ff7670b8bdbce50a}\label{mcvector_8h_a58b929265fc04749ff7670b8bdbce50a}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+T\+O\+T\+AL}(vec)~\mbox{\hyperlink{mcvector_8h_a58b9fe5ca2ef4655566d504d190f9dbd}{mc\+Vector\+Total}}(\&vec)
+\item 
+\mbox{\Hypertarget{mcvector_8h_a9232891c7ab5f1b762268b91c1ec2540}\label{mcvector_8h_a9232891c7ab5f1b762268b91c1ec2540}} 
+\#define {\bfseries M\+C\+V\+E\+C\+T\+O\+R\+\_\+\+F\+R\+EE}(vec)~\mbox{\hyperlink{mcvector_8h_a08c1a9071bcec214e55a97fbdf5b9cfa}{mc\+Vector\+Free}}(\&vec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mcvector_8h_ad606943041734360f98257d315db9e98}\label{mcvector_8h_ad606943041734360f98257d315db9e98}} 
+typedef struct \mbox{\hyperlink{structmc_vector}{mc\+Vector}} \mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}}
+\begin{DoxyCompactList}\small\item\em Mc\+Vector -\/ a dynamically resizeable container for pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mcvector_8h_a41f21baa55f13a76e873685076aad334}{mc\+Vector\+Init}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec)
+\begin{DoxyCompactList}\small\item\em initializes a Mc\+Vector \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mcvector_8h_a58b9fe5ca2ef4655566d504d190f9dbd}{mc\+Vector\+Total}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec)
+\begin{DoxyCompactList}\small\item\em gets the total number of pointers stored in a Mc\+Vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mcvector_8h_acb623fd69f854cbdb2d3694627ac75c9}{mc\+Vector\+Add}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec, void $\ast$item)
+\begin{DoxyCompactList}\small\item\em add an item to a a\+M\+C\+Vector \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mcvector_8h_a3e6ba7c0053fd6010beadcc9230d1dd8}{mc\+Vector\+Set}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec, int index, void $\ast$item)
+\begin{DoxyCompactList}\small\item\em replaces the element in a given vector at a given index with a new item \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{mcvector_8h_a3f63690319fc717942acdd67601ba543}{mc\+Vector\+Get}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec, int index)
+\begin{DoxyCompactList}\small\item\em retrieves the element in a given vector at a given index \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mcvector_8h_abfcc65262163628bb84a05ff8a6105c5}{mc\+Vector\+Delete}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec, int index)
+\begin{DoxyCompactList}\small\item\em Delete the element in a given vector at a given index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{mcvector_8h_a08c1a9071bcec214e55a97fbdf5b9cfa}{mc\+Vector\+Free}} (\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$vec)
+\begin{DoxyCompactList}\small\item\em Free the memory that a Mc\+Vector was using. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File containing declarations for vector structure. 
+
+\begin{DoxyAuthor}{Author}
+Mike Cole 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+14 Mar 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mcvector_8h_acb623fd69f854cbdb2d3694627ac75c9}\label{mcvector_8h_acb623fd69f854cbdb2d3694627ac75c9}} 
+\index{mcvector.h@{mcvector.h}!mcVectorAdd@{mcVectorAdd}}
+\index{mcVectorAdd@{mcVectorAdd}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorAdd()}{mcVectorAdd()}}
+{\footnotesize\ttfamily void mc\+Vector\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec,  }\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+add an item to a a\+M\+C\+Vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to add the item to. appends to end of vector. resizes vector if needed. \\
+\hline
+{\em item} & -\/ the item to be added to the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_abfcc65262163628bb84a05ff8a6105c5}\label{mcvector_8h_abfcc65262163628bb84a05ff8a6105c5}} 
+\index{mcvector.h@{mcvector.h}!mcVectorDelete@{mcVectorDelete}}
+\index{mcVectorDelete@{mcVectorDelete}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorDelete()}{mcVectorDelete()}}
+{\footnotesize\ttfamily void mc\+Vector\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Delete the element in a given vector at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to resize \\
+\hline
+{\em index} & -\/ the index where the item to delete is held \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_a08c1a9071bcec214e55a97fbdf5b9cfa}\label{mcvector_8h_a08c1a9071bcec214e55a97fbdf5b9cfa}} 
+\index{mcvector.h@{mcvector.h}!mcVectorFree@{mcVectorFree}}
+\index{mcVectorFree@{mcVectorFree}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorFree()}{mcVectorFree()}}
+{\footnotesize\ttfamily void mc\+Vector\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec }\end{DoxyParamCaption})}
+
+
+
+Free the memory that a Mc\+Vector was using. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_a3f63690319fc717942acdd67601ba543}\label{mcvector_8h_a3f63690319fc717942acdd67601ba543}} 
+\index{mcvector.h@{mcvector.h}!mcVectorGet@{mcVectorGet}}
+\index{mcVectorGet@{mcVectorGet}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorGet()}{mcVectorGet()}}
+{\footnotesize\ttfamily void$\ast$ mc\+Vector\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+retrieves the element in a given vector at a given index 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to resize \\
+\hline
+{\em index} & -\/ the index where the item to retrieve is held \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_a41f21baa55f13a76e873685076aad334}\label{mcvector_8h_a41f21baa55f13a76e873685076aad334}} 
+\index{mcvector.h@{mcvector.h}!mcVectorInit@{mcVectorInit}}
+\index{mcVectorInit@{mcVectorInit}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorInit()}{mcVectorInit()}}
+{\footnotesize\ttfamily void mc\+Vector\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec }\end{DoxyParamCaption})}
+
+
+
+initializes a Mc\+Vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to initialize \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_a3e6ba7c0053fd6010beadcc9230d1dd8}\label{mcvector_8h_a3e6ba7c0053fd6010beadcc9230d1dd8}} 
+\index{mcvector.h@{mcvector.h}!mcVectorSet@{mcVectorSet}}
+\index{mcVectorSet@{mcVectorSet}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorSet()}{mcVectorSet()}}
+{\footnotesize\ttfamily void mc\+Vector\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec,  }\item[{int}]{index,  }\item[{void $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+replaces the element in a given vector at a given index with a new item 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to resize \\
+\hline
+{\em index} & -\/ the index of the item to replace \\
+\hline
+{\em item} & -\/ the item to place at the index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{mcvector_8h_a58b9fe5ca2ef4655566d504d190f9dbd}\label{mcvector_8h_a58b9fe5ca2ef4655566d504d190f9dbd}} 
+\index{mcvector.h@{mcvector.h}!mcVectorTotal@{mcVectorTotal}}
+\index{mcVectorTotal@{mcVectorTotal}!mcvector.h@{mcvector.h}}
+\doxysubsubsection{\texorpdfstring{mcVectorTotal()}{mcVectorTotal()}}
+{\footnotesize\ttfamily int mc\+Vector\+Total (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mcvector_8h_ad606943041734360f98257d315db9e98}{Mc\+Vector}} $\ast$}]{vec }\end{DoxyParamCaption})}
+
+
+
+gets the total number of pointers stored in a Mc\+Vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & -\/ the Mc\+Vector to get the total from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ the total number of pointers stored in vec 
+\end{DoxyReturn}

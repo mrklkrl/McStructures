@@ -35,6 +35,9 @@ $(BUILD_DIR)/%.cpp.o: %.cpp
 
 clean:
 	$(RM) -r $(BUILD_DIR)
+	
+docs:
+	doxygen Doxyfile
 
 -include $(DEPS)
 

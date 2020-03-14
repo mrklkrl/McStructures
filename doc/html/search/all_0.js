@@ -33,5 +33,15 @@ var searchData=
   ['mcstackpop_30',['mcStackPop',['../mcstack_8c.html#a642bf112e3964bf4e317d02fcd7766ae',1,'mcstack.c']]],
   ['mcstackpush_31',['mcStackPush',['../mcstack_8c.html#a36b3d2e835df71c76a44fbdb721b0b9a',1,'mcstack.c']]],
   ['mcstacktop_32',['mcStackTop',['../mcstack_8c.html#a50bb6525fb709c3d7d33de5b5fd2f23c',1,'mcstack.c']]],
-  ['mcstructures_33',['McStructures',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['mcvector_33',['mcVector',['../structmc_vector.html',1,'mcVector'],['../mcvector_8h.html#ad606943041734360f98257d315db9e98',1,'McVector():&#160;mcvector.h']]],
+  ['mcvector_2ec_34',['mcvector.c',['../mcvector_8c.html',1,'']]],
+  ['mcvector_2eh_35',['mcvector.h',['../mcvector_8h.html',1,'']]],
+  ['mcvectoradd_36',['mcVectorAdd',['../mcvector_8c.html#acb623fd69f854cbdb2d3694627ac75c9',1,'mcVectorAdd(McVector *vec, void *item):&#160;mcvector.c'],['../mcvector_8h.html#acb623fd69f854cbdb2d3694627ac75c9',1,'mcVectorAdd(McVector *vec, void *item):&#160;mcvector.c']]],
+  ['mcvectordelete_37',['mcVectorDelete',['../mcvector_8c.html#abfcc65262163628bb84a05ff8a6105c5',1,'mcVectorDelete(McVector *vec, int index):&#160;mcvector.c'],['../mcvector_8h.html#abfcc65262163628bb84a05ff8a6105c5',1,'mcVectorDelete(McVector *vec, int index):&#160;mcvector.c']]],
+  ['mcvectorfree_38',['mcVectorFree',['../mcvector_8c.html#a08c1a9071bcec214e55a97fbdf5b9cfa',1,'mcVectorFree(McVector *vec):&#160;mcvector.c'],['../mcvector_8h.html#a08c1a9071bcec214e55a97fbdf5b9cfa',1,'mcVectorFree(McVector *vec):&#160;mcvector.c']]],
+  ['mcvectorget_39',['mcVectorGet',['../mcvector_8c.html#a3f63690319fc717942acdd67601ba543',1,'mcVectorGet(McVector *vec, int index):&#160;mcvector.c'],['../mcvector_8h.html#a3f63690319fc717942acdd67601ba543',1,'mcVectorGet(McVector *vec, int index):&#160;mcvector.c']]],
+  ['mcvectorinit_40',['mcVectorInit',['../mcvector_8c.html#a41f21baa55f13a76e873685076aad334',1,'mcVectorInit(McVector *vec):&#160;mcvector.c'],['../mcvector_8h.html#a41f21baa55f13a76e873685076aad334',1,'mcVectorInit(McVector *vec):&#160;mcvector.c']]],
+  ['mcvectorset_41',['mcVectorSet',['../mcvector_8c.html#a3e6ba7c0053fd6010beadcc9230d1dd8',1,'mcVectorSet(McVector *vec, int index, void *item):&#160;mcvector.c'],['../mcvector_8h.html#a3e6ba7c0053fd6010beadcc9230d1dd8',1,'mcVectorSet(McVector *vec, int index, void *item):&#160;mcvector.c']]],
+  ['mcvectortotal_42',['mcVectorTotal',['../mcvector_8c.html#a58b9fe5ca2ef4655566d504d190f9dbd',1,'mcVectorTotal(McVector *vec):&#160;mcvector.c'],['../mcvector_8h.html#a58b9fe5ca2ef4655566d504d190f9dbd',1,'mcVectorTotal(McVector *vec):&#160;mcvector.c']]],
+  ['mcstructures_43',['McStructures',['../md__r_e_a_d_m_e.html',1,'']]]
 ];
