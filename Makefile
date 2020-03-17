@@ -38,6 +38,9 @@ clean:
 	
 docs:
 	doxygen Doxyfile
+	
+run:
+	./$(BUILD_DIR)/$(TARGET_EXEC)
 
 -include $(DEPS)
 
